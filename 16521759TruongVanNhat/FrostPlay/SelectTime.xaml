@@ -1,0 +1,23 @@
+﻿<Window x:Class="FrostPlay.SelectTime"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrostPlay"
+        mc:Ignorable="d"
+        Title="Select Time" Height="200" Width="450" ResizeMode="NoResize" Icon="image/icon01.ico"
+        WindowStartupLocation="CenterScreen">
+    <Grid>
+        <DockPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <DockPanel DockPanel.Dock="Top" Margin="0 0 0 20">
+                <TextBox x:Name="inputHours" Width="60" Height="30" BorderThickness="1" TextAlignment="Center">0</TextBox>
+                <Label Name="labelHours" VerticalAlignment="Center" FontWeight="Bold">Hours</Label>
+                <TextBox x:Name="inputMinutes" Width="60" Height="30" BorderThickness="1" TextAlignment="Center">30</TextBox>
+                <Label Name="labelMinutes" VerticalAlignment="Center" FontWeight="Bold">Minutes</Label>
+                <TextBox x:Name="inputSeconds" Width="60" Height="30" BorderThickness="1" TextAlignment="Center">0</TextBox>
+                <Label Name="labelSeconds" VerticalAlignment="Center" FontWeight="Bold">Seconds</Label>
+            </DockPanel>
+            <Button Name="btnConfirm" Click="btnConfirm_Click" DockPanel.Dock="Bottom" HorizontalAlignment="Center" Width="100" Height="30" Content="Confirm" BorderBrush="#FFC90089" Background="#FFC90089"></Button>
+        </DockPanel>
+    </Grid>
+</Window>
